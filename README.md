@@ -7,9 +7,13 @@ The dataset includes key sales metrics such as product details, quantity, total 
 
 ## The data include five major tables:
 **Products** - Product details(Product Category,Unit price)
+
 **TotalSales** - (Unit price * Quantity)
+
 **Category** - Category of each product
+
 **Payment Method**
+
 **Date**
 
 The analysis answers questions like:
@@ -164,7 +168,7 @@ GROUP BY DATENAME(month, Date), MONTH(Date);
 ## 👩‍💻 Author
 **Melvine Achieng**  
 📍 Data Analyst | SQL | Power BI | Python Enthusiast  
-📧 melvineachieng@email.com  
+📧 achiengmelvine76@gmail.com  
 🔗 [LinkedIn Profile](https://linkedin.com/in/melvineachieng)  
 
 ---
