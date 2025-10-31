@@ -1,7 +1,7 @@
 # Amazon_Sales-Data2025
-# 🛒 Amazon Sales Data Analysis (SQL Project)
+# Amazon Sales Data Analysis (SQL Project)
 
-## 📘 Project Overview
+## Project Overview
 This project focuses on **analyzing Amazon sales data** using SQL Server to uncover meaningful **business insights**, track **sales performance**, and support **data-driven decision-making**.  
 The dataset includes key sales metrics such as product details, quantity, total sales, customer locations, and payment methods.  
 
@@ -24,7 +24,7 @@ The analysis answers questions like:
 
 ---
 
-## 🧠 Objectives
+## Objectives
 1. **Understand the dataset** structure and contents.  
 2. Perform **Sales Performance Analysis** (Revenue trends, Top Products).  
 3. Gain **Customer Insights** (Top customers, regions, payment methods).  
@@ -34,22 +34,22 @@ The analysis answers questions like:
 
 ---
 
-## 🧰 Tools & Technologies
+##  Tools & Technologies
 - **SQL Server (SSMS 21)**  
 - **Microsoft Excel** (for data cleaning and preprocessing)  
 - **Power BI** (for dashboards)  
 
 ---
 
-## 📊 SQL Queries & Analysis
+## SQL Queries & Analysis
 
-### 1️⃣ Understanding the Data
+### 1️ Understanding the Data
 ```sql
 SELECT * 
 FROM [amazon_sales_data 2025];
 ```
 
-### 2️⃣ Sales Performance Analysis
+### 2️ Sales Performance Analysis
 **Total Revenue:**
 ```sql
 SELECT SUM(Total_Sales) AS Revenue
@@ -73,7 +73,7 @@ GROUP BY Product
 ORDER BY TotalSales_Revenue DESC;
 ```
 
-### 3️⃣ Customer Insights
+### 3️ Customer Insights
 **Top & Bottom Performing Products:**
 ```sql
 SELECT TOP 5 Product, SUM(Total_Sales) AS TotalSales
@@ -95,7 +95,7 @@ GROUP BY Payment_Method
 ORDER BY Payment_Count DESC;
 ```
 
-### 4️⃣ Regional Analysis
+### 4️ Regional Analysis
 **Top Performing Regions:**
 ```sql
 SELECT Customer_Location, SUM(Total_Sales) AS Sales
@@ -112,7 +112,7 @@ GROUP BY Customer_Location
 ORDER BY Sales ASC;
 ```
 
-### 5️⃣ Product Insight
+### 5️ Product Insight
 **Sales by Product Category:**
 ```sql
 SELECT Category, SUM(Total_Sales) AS Sales
@@ -121,7 +121,7 @@ GROUP BY Category
 ORDER BY Sales DESC;
 ```
 
-### 6️⃣ Month-over-Month Growth Analysis
+### 6️ Month-over-Month Growth Analysis
 ```sql
 SELECT
     YEAR(Date) AS Year,
@@ -135,7 +135,7 @@ GROUP BY YEAR(Date), MONTH(Date)
 ORDER BY Year, Month;
 ```
 
-### 7️⃣ Investigating the Decline in April
+### 7️ Investigating the Decline in April
 **Total Quantity & Revenue per Month:**
 ```sql
 SELECT MONTH(Date) AS Month, 
@@ -156,7 +156,7 @@ GROUP BY DATENAME(month, Date), MONTH(Date);
 
 ---
 
-## 📈 Insights & Recommendations
+## Insights & Recommendations
 - **April** recorded the **lowest sales**, likely due to reduced quantity sold and fewer orders.  
 - **Top-selling products** drive the majority of total revenue — suggesting focused inventory management.  
 - **Certain regions underperform**, indicating a need for localized marketing efforts.  
