@@ -165,11 +165,4 @@ GROUP BY DATENAME(month, Date), MONTH(Date);
 ---
 
 
-## 👩‍💻 Author
-**Melvine Achieng**  
-📍 Data Analyst | SQL | Power BI | Python Enthusiast  
-📧 achiengmelvine76@gmail.com  
-🔗 [LinkedIn Profile](https://linkedin.com/in/melvineachieng)  
-
----
 
